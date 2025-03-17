@@ -32,5 +32,16 @@ function mostrarAmigos() {
         let li = document.createElement("li");
         li.textContent = amigos[i];
         listaAmigos.appendChild(li);
+    }
 }
+// Función para sortear un amigo aleatorio
+function sortearAmigo() {
+    // Verificar si hay amigos disponibles
+    if (amigos.length === 0) {
+        alert("No hay amigos para sortear.");
+        return;
+    }
+
+    // Generar un índice aleatorio
+    let indiceAleatorio = Math.floor(Math.random() * amigos.length);
 }
